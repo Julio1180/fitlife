@@ -1,0 +1,522 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Cabecera */
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sección de bienvenida */
+#bienvenida {
+    background-color: #e3e3e3;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#bienvenida h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#bienvenida p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Sección de Servicios */
+#servicios {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url(/img/espacios-t.jpg);
+}
+
+#servicios h2 {
+    color: white;
+}
+
+#servicios h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.servicio {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 16px;
+}
+
+/* Sección de Galería */
+#galeria {
+
+    background-color: #e3e3e3;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+#galeria h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.imagenes img {
+
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*  imagenes container  */
+.container {
+    position: relative;
+}
+
+/* Ocultar las imágenes por defecto */
+.mySlides {
+    display: none;
+}
+
+/* Agregue un puntero al pasar el cursor sobre las imágenes en miniatura */
+.cursor {
+    cursor: pointer;
+}
+
+/* Botones siguiente y anterior */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Coloque el "botón siguiente" a la derecha */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Al pasar el cursor, agregue un color de fondo negro con un poco de transparencia.*/
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Texto numérico (1/3, etc.) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Contenedor para texto de imagen */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Seis columnas una al lado de la otra */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Agregue un efecto de transparencia para imágenes en miniatura*/
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* Estilos del formulario de contacto */
+.form-contacto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #555;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+
+}
+
+#contacto p {
+    font-size: 18px;
+    color: #555;
+    padding-bottom: 20px;
+
+}
+
+iframe {
+    max-width: 100%;
+    padding-top: 20px;
+    width: 700px;
+    height: 500px;
+}
+
+
+/* Pie de Página */
+footer {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+
+/* Animación para que los elementos aparezcan suavemente */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.elemento-animado {
+    animation: fadeInUp 1s ease-out;
+    opacity: 0;
+    /* Inicialmente oculto */
+}
+
+/* Aplica la animación a las secciones */
+#bienvenida,
+#servicios,
+#galeria,
+#contacto {
+    opacity: 0;
+
+}
+
+#bienvenida.visible,
+#servicios.visible,
+#galeria.visible,
+#contacto.visible {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+/*email*/
+.mail h3 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 3em;
+    color: black;
+    text-align: center;
+
+}
+
+
+.mailtexto p {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.inputmail {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+/*email*/
+
+/*planes*/
+
+.planes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500%;
+    margin: 100px;
+    padding: 100px;
+    font-size: 1.2em;
+    background-image: url(/img/box.jpg);
+    color: white;
+    object-fit: contain;
+    margin-top: 30px;
+
+}
+
+.planes:hover {
+    filter: opacity(.7);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    overflow: hidden;
+}
+
+.planes p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+p {
+    margin-left: 30px;
+}
+
+
+/*sostenibilidad*/
+.sostenibilidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500%;
+    margin: 100px;
+    padding: 100px;
+    font-size: 1.2em;
+    background-image: url(/img/box.jpg);
+    color: white;
+    object-fit: contain;
+    margin-top: 100px;
+
+}
+
+.sostenibilidad:hover {
+    filter: opacity(.7);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    overflow: hidden;
+}
+
+/*Que_somos*/
+.Que_somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500%;
+    margin: 100px;
+    padding: 100px;
+    font-size: 1.2em;
+    background-image: url(/img/box.jpg);
+    color: white;
+    object-fit: contain;
+    margin-top: 100px;
+}
+
+.Que_somos:hover {
+    filter: opacity(.7);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    overflow: hidden;
+}
+
+
+/* Para hacer las imágenes más atractivas al pasar el mouse */
+.imagenes img:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos generales para el modal */
+.modal {
+    display: none;
+    /* Ocultar el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    /* Asegura que el modal esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Toma todo el ancho de la pantalla */
+    height: 100%;
+    /* Toma toda la altura de la pantalla */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semi-transparente */
+}
+
+/* Contenido del Modal */
+.modal-contenido {
+
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón de cierre */
+.cerrar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Animación de aparición del Modal */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-contenido {
+    animation: modalFadeIn 0.4s ease-out;
+}

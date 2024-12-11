@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio FitLife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c1026ae30c.js" crossorigin="anonymous"></script>
+    <script defer src="js/function.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="logo">
+            <h1>FitLife Gym</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section id="bienvenida">
+        <h2>Bienvenido a FitLife Gym</h2>
+        <p>Sumérgete en la exclusividad de nuestro estudio boutique premium. Aquí cada detalle está diseñado para ofrecerte una experiencia de entrenamiento inigualable. Desde YOGA y BARRÉ hasta BOOTCAMP, CICLO y BOXEO, todo acompañado por tecnología de última generación y un ambiente único.Descubre también nuestro GIMNASIO, equipado con los equipos más innovadores para la valoración de la condición física y la programación de ejercicio que incorpora IA, un área de coworking y un espacio de relación para disfrutar con otros miembros del club antes y después de tus entrenamientos.
+
+        </p>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios">
+            <div class="servicio">
+                <h3>Entrenamiento Personalizado</h3>
+                <p>Entrenadores especializados diseñarán rutinas adaptadas a tus necesidades.</p>
+            </div>
+            <div class="servicio">
+                <h3>Clases Grupales</h3>
+                <p>Disfruta de clases de yoga, pilates, zumba, y más.</p>
+            </div>
+            <div class="servicio">
+                <h3>Zona de Pesas</h3>
+                <p>Contamos con equipos modernos para el entrenamiento de fuerza.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Que_somos-->
+
+    <article class="Que_somos">
+
+        <p>En Fitlife, redefinimos el lujo en el mundo del fitness. Hemos creado un espacio exclusivo donde cada detalle está pensado para ofrecerte una experiencia de entrenamiento sin igual. Aquí, tus metas se transforman en logros con la ayuda de los mejores profesionales y tecnología avanzada. No es solo ejercicio, es un estilo de vida que inspira grandeza y perseverancia. Ven y descubre el verdadero significado del lujo en el fitness. ¡Bienvenido a Fitlife, donde cada día es una oportunidad para superarte!.</p>
+    </article>
+
+
+    <!-- Sección de Galería -->
+    <section id="galeria">
+        <h2> Te invitamos a vivir una experiencia incomparable que te inspirará y motivará en cada sesión. ¡Sumérgete en nuestro club!</h2>
+        <div class="imagenes">
+            <img src="img/imag-2.jpg" alt="Gimnasio 1">
+
+            <img src="img/box.jpg" alt="Gimnasio 3">
+
+        </div>
+
+    </section>
+
+    <!-- Container  image gallery -->
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/biceps.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/funcional-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/coach.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/reco-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/prensa.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/sentadilla.jpg" style="width:100%">
+        </div>
+
+        <!-- botones adelante-atras -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Imagen texto -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail imagenes -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="img/biceps.jpg" style="width:100%" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/funcional-2.jpg" style="width:100%" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/coach.jpg" style="width:100%" onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/reco-2.jpg" style="width:100%" onclick="currentSlide(4)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/prensa.jpg" style="width:100%" onclick="currentSlide(5)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/sentadilla.jpg" style="width:100%" onclick="currentSlide(6)">
+            </div>
+        </div>
+    </div>
+
+
+    <section id="galeria">
+        <h2>Espacios</h2>
+        <div class="imagenes">
+            <img src="img/caminadoras.jpg" alt="Gimnasio 1">
+            <img src="img/sala.jpg" alt="Gimnasio 3">
+            <img src="img/racksm.jpg" alt="Gimnasio 1">
+
+        </div>
+
+
+    </section>
+    <section id="galeria">
+
+        <div class="imagenes">
+            <img src="img/sentadillas-3.jpg" alt="Gimnasio 3">
+            <img src="img/espacios-t.jpg" alt="Gimnasio 1">
+            <img src="img/espacios.jpg" alt="Gimnasio 3">
+
+        </div>
+
+    </section>
+
+    <!-- sostenibilidad-->
+
+    <article class="sostenibilidad">
+        <p>Estamos comprometidos con la responsabilidad medioambiental, creando espacios sostenibles certificados por el sello Breeam. Somos el primer centro deportivo de España con la certificación medioambiental, por eso, promovemos políticas responsables que cuidan de nuestro planeta. Únete a nosotros en este viaje hacia un futuro más sostenible. Juntos, construimos un legado de excelencia y respeto.</p>
+    </article>
+
+    <!-- Sección de Contacto  Formulario-->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna consulta, no dudes en contactarnos. ¡Estamos aquí para ayudarte!</p>
+
+        <form action="#" method="post" class="form-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Redes Sociales</h2>
+        <p>Contáctanos a través de nuestras redes sociales o visitanos en nuestras instalaciones.</p>
+        <div class="icon">
+            <button type="submit">
+                <i class="fa-brands fa-youtube"></i>
+            </button>
+            <button type="submit">
+                <i class="fa-brands fa-twitter"></i>
+            </button>
+            <button type="submit">
+                <i class="fa-brands fa-instagram"></i>
+            </button>
+            <button type="submit">
+                <i class="fa-brands fa-facebook"></i>
+            </button>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24295.758175279436!2d-3.6962656052733296!3d40.43166823862425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b8e2b7b727%3A0x2343f6316e2f37b7!2sSalamanca%2C%20Madrid!5e0!3m2!1ses!2ses!4v1732533272763!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- suscribe newsletters -->
+    <div class="mail">
+        <h3> Newsletter</h3>
+    </div>
+    <div>
+        <div class="mailtexto">
+
+            <p>Suscribete a nuesta newsletter y se el primero en recibir noticias y ofertas en nuestro planes.</p>
+
+        </div>
+        <div class="inputmail">
+            <input type="text">
+            <button>Suscribete</button>
+        </div>
+    </div>
+
+
+    <!-- Planes ESPECIALES PREAPERTURA -->
+
+    <article class="planes">
+
+        <p>Promoción válida para los 500 primeros socios durante el primer año. Paga solo la Cuota de Inscripción con un 50% de descuento y no vuelvas a pagarla nunca más, aunque te des de baja temporalmente. Además recibirás un Pack de Bienvenida valorado en 350€.</p>
+    </article>
+
+    <!-- Botón para abrir el Modal -->
+    <button id="abrirModal" class="btn-enviar">Pincha aqui!!</button>
+
+    <!-- Ventana Modal -->
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h1>Fitlife</h1>
+            <p>¡Bienvenido a nuestro gimnasio! Aquí encontrarás todo lo necesario para mejorar tu salud y bienestar. Contamos con entrenadores profesionales, equipos de última generación y clases grupales para todos los niveles.</p>
+            <p>¡Únete hoy mismo y empieza tu viaje hacia una vida más saludable!</p>
+            <h2>CODE descuento fitlife2025</h2>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+
+        <footer>
+
+            <div class="copyrigth">
+                <div class="text-copyright">
+                    <p>© 2024 @juliandmacias - All rights reserved</p>
+                </div>
+            </div>
+            <div>
+                <p>fitlife@Gymfitlife.com</p>
+            </div>
+
+
+        </footer>
+    </footer>
+</body>
+
+</html>
